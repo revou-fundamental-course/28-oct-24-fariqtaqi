@@ -1,8 +1,8 @@
 document.addEventListener("DOMContentLoaded", function () {
     // Mengambil elemen-elemen yang diperlukan
-    const weightInput = document.querySelector("input[type='number']:nth-of-type(1)");
-    const ageInput = document.querySelector("input[type='number']:nth-of-type(2)");
-    const heightInput = document.querySelector("input[type='number']:nth-of-type(3)");
+    const weightInput = document.querySelector(".weight");
+    const ageInput = document.querySelector(".age");
+    const heightInput = document.querySelector(".height");
     const resultBtn = document.querySelector(".result");
     const resetBtn = document.querySelector(".reset");
     const hasilDisplay = document.querySelector(".hasil");
