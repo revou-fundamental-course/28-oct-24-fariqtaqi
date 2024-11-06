@@ -1,0 +1,263 @@
+/* *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background-color: #F1F1F1;
+    flex-direction: row;
+}
+main{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.description{
+    text-align: justify;
+}
+.form-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+section{
+    background-color: #e7e8e8;
+    padding: 20px;
+    border-radius: 20px;
+    text-align: center;
+    margin: 20px;
+}
+h1{
+    font-size: 20px;
+    padding: 20px;
+}
+form label{
+    font-size: 16px;
+    margin: 5px;
+}
+form input{
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+    text-align: center;
+}
+form select{
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    padding: 5px;
+    font-size: 15px;
+    text-align: center;
+
+}
+p{
+    text-align: justify;
+}
+ol{
+    text-align: justify;
+}
+.download, .konsultasi, .registrasi, .result{
+    margin: 10px;
+    width: 200px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    background-color: rgb(100, 174, 226);
+    color: white;
+    cursor: pointer;
+}
+.reset {
+    margin: 10px;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+
+}
+.hasil{
+    font-size: 20px;
+    font-weight: 700;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 55px;
+    margin-bottom: 10px;
+    margin-top: 25px;
+}
+.comment{
+    text-align: center;
+} */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background-color: #f9fbfc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    color: #333;
+    padding: 20px;
+    background-image: url("../assets/bg.jpg");
+}
+
+main {
+    max-width: 800px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+/* General Section Styling */
+section {
+    background-color: #ffffff;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    border-radius: 15px;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+h1 {
+    font-size: 2rem;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: justify;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Form Styling */
+.form-section {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+form label {
+    font-size: 1rem;
+    color: #555;
+    text-align: left;
+    width: 100%;
+    font-weight: 500;
+}
+
+form input, form select {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: 1px solid #ccc;
+    transition: border-color 0.3s ease;
+}
+
+form input:focus, form select:focus {
+    outline: none;
+    border-color: #0077b6;
+}
+
+button {
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.2s;
+}
+
+.result {
+    background-color: #0077b6;
+    color: white;
+}
+
+.result:hover {
+    background-color: #005f91;
+    transform: scale(1.05);
+}
+
+.reset {
+    background-color: #e1e1e1;
+    color: #333;
+}
+
+.reset:hover {
+    background-color: #c1c1c1;
+}
+
+.download, .konsultasi, .registrasi {
+    background-color: #0077b6;
+    color: white;
+    margin-top: 10px;
+    width: 100%;
+}
+
+.download:hover, .konsultasi:hover, .registrasi:hover {
+    background-color: #005f91;
+}
+
+/* BMI Result Display */
+.hasil {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #4f7df9;
+    background-color: #eaeaea;
+    display: inline-block;
+    padding: 15px 30px;
+    border-radius: 50px;
+    margin-top: 25px;
+}
+
+.comment {
+    font-size: 1.1rem;
+    color: #555;
+    font-weight: 500;
+    margin-top: 10px;
+}
+
+ol {
+    text-align: left;
+    padding-left: 20px;
+    color: #555;
+    line-height: 1.6;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    main {
+        padding: 10px;
+    }
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    .hasil {
+        font-size: 1.5rem;
+    }
+
+    form input, form select, button {
+        font-size: 0.9rem;
+    }
+}
